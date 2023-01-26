@@ -1387,6 +1387,11 @@ export const TequilaDrinks: Drinks[] =[
     }
 ]
 
+export const WhiskeyDrinks: Drinks[] =[]
+
+export const BrandyDrinks: Drinks[] =[]
+
+
 export const Template: Drinks[] = [
     {
         name: '',
