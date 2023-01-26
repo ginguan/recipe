@@ -4,7 +4,7 @@ import React from 'react';
 import { NonAlcoholicDrinks, VodkaDrinks, LiqueurDrinkns, GinDrinkns, Collins, RumDrinks } from './constants';
 import { Routes, Route } from 'react-router-dom';
 import RandomQuiz from './components/RandomQuiz';
-import { RiceBowl } from '@mui/icons-material';
+
 
 function App() {
   const all = NonAlcoholicDrinks.concat(VodkaDrinks).concat(LiqueurDrinkns).concat(GinDrinkns).concat(RumDrinks)
