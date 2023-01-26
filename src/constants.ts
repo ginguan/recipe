@@ -1200,7 +1200,7 @@ export const TequilaDrinks: Drinks[] =[
     {
         name: 'Bloody Maria',
         tag: `Tequila`,
-        method: `Build on ice`,
+        method: `Build on ice, Salted rim`,
         glass: 'Tall',
         ingredients: [
             {
@@ -1217,6 +1217,171 @@ export const TequilaDrinks: Drinks[] =[
             },
             {
                 ingredient: 'Tomato juice'
+            }
+        ]
+    },
+    {
+        name: 'Brave Bull',
+        tag: `Tequila`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {   
+                measure: '0.5 oz',
+                ingredient:' Coffee liqueur'
+            }
+        ]
+    },
+    {
+        name: 'Tequila Paralyzer',
+        tag: `Tequila`,
+        method: `Build on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Coffee Liqueur'
+            },
+            {
+                ingredient: 'Coke'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Cream'
+            }
+        ]
+    },
+    {
+        name: 'Matador',
+        tag: `Tequila`,
+        method: `Shake & Strain`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '2 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '1 oz',
+                ingredient: 'Pineapple juice'
+            },
+            {
+                measure: '1/4 oz',
+                ingredient: 'Lime juice'
+            }
+        ]
+    },
+    {
+        name: 'Margarita',
+        tag: `Tequila`,
+        method: `Shake & Pour, Salted rim`,
+        glass: 'Double Rocks',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient:'Triple sec'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lime juice'
+            }
+        ]
+    },
+    {
+        name: 'Blue Margarita',
+        tag: `Tequila`,
+        method: `Shake & Pour`,
+        glass: 'Double rocks',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Blue Curacao'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lime juice'
+            }
+        ]
+    },
+    {
+        name: 'Golden Margarita',
+        tag: `Tequila`,
+        method: `Shake & Pour`,
+        glass: 'Double rocks',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Grand Marnier'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lime juice'
+            }
+        ]
+    },
+    {
+        name: 'Long Island Iced Tea',
+        tag: `Vodka, Gin, Rum, Tequila`,
+        method: `Builld on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '0.5 oz',
+                ingredient: 'Vodka, Gin, Rum, Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Triple Sec'
+            },
+            {
+                ingredient: 'Coke'
+            },
+            {   
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            }
+        ]
+    },
+    {
+        name: 'Electric Iced Tea',
+        tag: `Vodka, Gin, Rum, Tequila`,
+        method: `Builld on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '0.5 oz',
+                ingredient: 'Vodka, Gin, Rum, Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Blue Curacao'
+            },
+            {
+                ingredient: '7-Up'
+            },
+            {   
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
             }
         ]
     }
