@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import DrinkTable from './components/DrinkTable';
+import React from 'react';
+import { NonAlcoholicDrinks, VodkaDrinks, LiqueurDrinkns, GinDrinkns, Collins, RumDrinks } from './constants';
+import { Routes, Route } from 'react-router-dom';
+import RandomQuiz from './components/RandomQuiz';
+import { RiceBowl } from '@mui/icons-material';
 
 function App() {
+  const all = NonAlcoholicDrinks.concat(VodkaDrinks).concat(LiqueurDrinkns).concat(GinDrinkns).concat(RumDrinks)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+         <Routes>
+         <Route path="/" element={<DrinkTable drinkSet = {all} header={'ALL'}/>} />
+          <Route path="/non-alcoholic" element={<DrinkTable drinkSet = {NonAlcoholicDrinks} header={'NON-ALCOHOLIC'}/>} />
+          <Route path="/vodka" element={<DrinkTable drinkSet = {VodkaDrinks} header={'VODKA'}/>} />
+          <Route path="/liqueur" element={<DrinkTable drinkSet = {LiqueurDrinkns} header={'LIQUEUR'}/>} />
+          <Route path="/gin" element={<DrinkTable drinkSet = {GinDrinkns} header={'GIN'}/>} />
+          <Route path="/collins" element={<DrinkTable drinkSet = {Collins} header={'Collins test'}/>} />
+          <Route path="/rum" element={<DrinkTable drinkSet = {RumDrinks} header={'Rum'}/>} />
+          <Route path="/quiz" element={<RandomQuiz drinkSet = {all} />} />
+       </Routes>
+    </>
   );
 }
 
