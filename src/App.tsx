@@ -12,6 +12,7 @@ function App() {
     <>
          <Routes>
          <Route path="/" element={<DrinkTable drinkSet = {all} header={'ALL'} isAnswer={false}/>} />
+         <Route path="/All" element={<DrinkTable drinkSet = {all} header={'ALL'} isAnswer={false}/>} />
           <Route path="/non-alcoholic" element={<DrinkTable drinkSet = {NonAlcoholicDrinks} header={'NON-ALCOHOLIC'} isAnswer={false}/>} />
           <Route path="/vodka" element={<DrinkTable drinkSet = {VodkaDrinks} header={'VODKA'} isAnswer={false}/>} />
           <Route path="/liqueur" element={<DrinkTable drinkSet = {LiqueurDrinkns} header={'LIQUEUR'} isAnswer={false}/>} />
