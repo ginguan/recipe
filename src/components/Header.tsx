@@ -11,7 +11,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
-const pages = ['All','Non-Alcoholic', 'Vodka', 'Liqueur', 'Gin', 'Rum', 'Collins','Quiz'];
+const pages = ['All','Non-Alcoholic', 'Vodka', 'Liqueur', 'Gin', 'Rum', 'Tequila', 'Collins','Quiz'];
 
 function ResponsiveAppBar({ logo }: { logo: String}) {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -33,7 +33,7 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/recipe"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },

@@ -1086,16 +1086,142 @@ export const RumDrinks: Drinks[] = [
     {
         name: 'Blue Hawaiian',
         tag: `Rum`,
-        method: ``,
-        glass: '',
+        method: `Shake & Pour`,
+        glass: 'Tall',
         ingredients: [
             {
-                measure: '',
-                ingredient: '',
+                measure: '1.5 oz',
+                ingredient: 'White rum',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Blue Curacao',
+            },
+            {
+                measure: '3.0 oz',
+                ingredient: 'Pineapple juice',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Coconut crea',
+            }
+        ]
+    },
+    {
+        name: 'Easy Mai Tai',
+        tag: `Rum`,
+        method: `Shake & Pour`,
+        glass: 'Short',
+        note: 'Difficult',
+        ingredients: [
+            {
+                measure: '1.0 oz',
+                ingredient: 'Dark rum',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Amaretto',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Simple Syrup'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lime juice'
             }
         ]
     }
 ]
+
+export const TequilaDrinks: Drinks[] =[
+    {
+        name: 'Tequila Sunrise',
+        tag: `Tequila`,
+        method: `Build on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '2.0 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Granedine',
+            },
+            {
+                ingredient: 'Orange juice',
+            }
+        ]
+    },
+    {
+        name: 'Poloma',
+        tag: `Tequila`,
+        method: `Build on ice`,
+        glass: 'Tall',
+        note: 'Dont forget simple syrup',
+        ingredients: [
+            {
+                measure: '2.0 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Grapefruit juice'
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Simple Syrup'
+            },
+            {
+                ingredient: 'Soda water'
+            }
+        ]
+    },
+    {
+        name: 'Tequila Wallbanger',
+        tag: `Tequila`,
+        method: `Build on ice`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '3/4 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                ingredient: 'Orange juice'
+            },
+            {
+                measure: '1/4 oz',
+                ingredient: 'Galliano'
+            }
+        ]
+    },
+    {
+        name: 'Bloody Maria',
+        tag: `Tequila`,
+        method: `Build on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '2 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '4 dash',
+                ingredient: 'Tabascoo sauce'
+            },
+            {
+                measure: '4 dash',
+                ingredient: 'Worcestershire'
+            },
+            {
+                ingredient: 'Tomato juice'
+            }
+        ]
+    }
+]
+
 export const Template: Drinks[] = [
     {
         name: '',

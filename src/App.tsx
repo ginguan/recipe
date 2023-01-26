@@ -1,13 +1,13 @@
 import './App.css';
 import DrinkTable from './components/DrinkTable';
 import React from 'react';
-import { NonAlcoholicDrinks, VodkaDrinks, LiqueurDrinkns, GinDrinkns, Collins, RumDrinks } from './constants';
+import { NonAlcoholicDrinks, VodkaDrinks, LiqueurDrinkns, GinDrinkns, Collins, RumDrinks, TequilaDrinks } from './constants';
 import { Routes, Route } from 'react-router-dom';
 import RandomQuiz from './components/RandomQuiz';
 
 
 function App() {
-  const all = NonAlcoholicDrinks.concat(VodkaDrinks).concat(LiqueurDrinkns).concat(GinDrinkns).concat(RumDrinks)
+  const all = [...NonAlcoholicDrinks,...VodkaDrinks,...LiqueurDrinkns,...GinDrinkns,...RumDrinks,...TequilaDrinks]
   return (
     <>
          <Routes>
@@ -19,6 +19,7 @@ function App() {
           <Route path="/gin" element={<DrinkTable drinkSet = {GinDrinkns} header={'GIN'} isAnswer={false}/>} />
           <Route path="/collins" element={<DrinkTable drinkSet = {Collins} header={'Collins test'} isAnswer={false}/>} />
           <Route path="/rum" element={<DrinkTable drinkSet = {RumDrinks} header={'Rum'} isAnswer={false}/>} />
+          <Route path="/Tequila" element={<DrinkTable drinkSet = {TequilaDrinks} header={'Tequila'} isAnswer={false}/>} />
           <Route path="/quiz" element={<RandomQuiz drinkSet = {all} />} />
        </Routes>
     </>
