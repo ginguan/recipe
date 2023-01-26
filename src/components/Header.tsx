@@ -78,7 +78,7 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
             >
               {pages.map((page) => (
                 <MenuItem key={page} component={'a'}
-                href={`/recipe/${page}`} >
+                href={`http://ginguan.github.io/recipe/${page}`} >
                   <Typography textAlign="center" >{page}</Typography>
                 </MenuItem>
               ))}
@@ -89,7 +89,7 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="http://ginguan.github.io/recipe"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -108,7 +108,7 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
               <Button
                 key={page}
                 component={'a'}
-                href={`/recipe/${page}`}
+                href={`http://ginguan.github.io/recipe/${page}`}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
