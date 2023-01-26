@@ -1387,10 +1387,117 @@ export const TequilaDrinks: Drinks[] =[
     }
 ]
 
-export const WhiskeyDrinks: Drinks[] =[]
+export const WhiskeyDrinks: Drinks[] =[
+    {
+        name: 'Michael Collins',
+        tag: `Irish Whiskey`,
+        method: `Build on ince`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '2.0 oz',
+                ingredient: 'Irish Whiskey',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Simple Syrup'
+            },
+            {
+                ingredient: 'Soda Water'
+            }
+        ]
+    },
+    {
+        name: 'Lynchburg Lemonade',
+        tag: `Jack Daniels`,
+        method: `Build on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Jack Daniels',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Triple Sec'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            },
+            {
+                ingredient: '7-UP'
+            }
+        ]
+    },
+    {
+        name: 'Whiskey Sour',
+        tag: `Whiskey`,
+        method: `Wet & Dry Shake`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '2.0 oz',
+                ingredient: 'Whiskey',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Simple syrup'
+            },
+            {
+                measure: '3/4 oz',
+                ingredient: 'Egg White'
+            }, 
+            {
+                ingredient: 'bitters'
+            }
+        ]
+    },
+    {
+        name: 'Manhattan',
+        tag: `Rye`,
+        method: `Stir & Strain`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Whiskey',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Sweet Vermouth'
+            },
+            {
+                measure: '4 dashes',
+                ingredient: 'Bitters'
+            }
+        ]
+    }
+]
 
-export const BrandyDrinks: Drinks[] =[]
+export const BrandyDrinks: Drinks[] =[
+    {
+        name: 'Sidecar',
+        tag: ``,
+        method: ``,
+        glass: '',
+        ingredients: [
+            {
+                measure: '',
+                ingredient: '',
+            }
+        ]
+    }
 
+]
 
 export const Template: Drinks[] = [
     {
