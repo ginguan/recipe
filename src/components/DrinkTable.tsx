@@ -15,6 +15,7 @@ import { Drinks } from '../models/Drink';
 import { Button, Typography } from '@mui/material';
 import * as _ from "lodash";
 import { useEffect } from 'react';
+import Header from './Header';
 
 const Row = ({ row, setRows, rows }: { row: Drinks, setRows:any, rows: Drinks[]}) => {
 
@@ -74,16 +75,17 @@ const Row = ({ row, setRows, rows }: { row: Drinks, setRows:any, rows: Drinks[]}
 }
 
 
-const DrinkTable = ({ drinkSet, header }: { drinkSet: Drinks[], header: String }) => {
+const DrinkTable = ({ drinkSet, header, isAnswer }: { drinkSet: Drinks[], header: String, isAnswer: Boolean }) => {
     const [rows, setRows] = useState(drinkSet)
     const sortArray = (tags: keyof Drinks) => {
         setRows(_.orderBy(rows, tags))
     }
     return (
-        <TableContainer style={{paddingTop:'50px'}}>
-            <Typography variant="h4" component="h2" style={{paddingLeft:'90px'}}>
-                {header}
-            </Typography>;
+        <TableContainer>
+            {!isAnswer && <Header logo={header}/>}
+            {/* <Typography variant="h4" component="h2" style={{paddingLeft:'90px', flexDirection:'row'}}>
+                {header} 
+            </Typography> */}
             <Table align='center' style={{ width: "80%", tableLayout: "auto" }} >
                 <TableHead>
                     <TableRow>

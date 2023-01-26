@@ -4,6 +4,7 @@ import React from 'react';
 import { useState } from "react";
 import { Drinks } from "../models/Drink";
 import DrinkTable from "./DrinkTable";
+import Header from "./Header";
 
 const RandomQuiz = ({ drinkSet }: { drinkSet: Drinks[] }) => {
 
@@ -11,6 +12,7 @@ const RandomQuiz = ({ drinkSet }: { drinkSet: Drinks[] }) => {
     const [showAnswer, setShowAnswer] = useState(false)
     return (
         <div>
+            <Header logo={'QUIZ'}/>
             {drinkSetShuffle.map((member) => (
                 <div style={{ paddingLeft: '45%', paddingTop: '30px', fontWeight: 'bold', fontSize: '20px' }}>
                     {member.name}
@@ -23,7 +25,7 @@ const RandomQuiz = ({ drinkSet }: { drinkSet: Drinks[] }) => {
                 <Button onClick={() => setShowAnswer(!showAnswer)}>Answers</Button>
             </div>
             {showAnswer && 
-            <DrinkTable drinkSet={drinkSetShuffle} header={''}/>}
+            <DrinkTable drinkSet={drinkSetShuffle} header={''} isAnswer={true}/>}
         </div>)
 };
 
