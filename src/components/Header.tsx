@@ -44,7 +44,7 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
               textDecoration: 'none',
             }}
           >
-            {logo}
+           Review
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
