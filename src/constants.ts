@@ -26,7 +26,7 @@ export const NonAlcoholicDrinks: Drinks[] = [
         glass: 'Tall',
         ingredients: [
             {
-                measure: '1.5 oz',
+                measure: '1.0 oz',
                 ingredient: 'Lime Juice',
             },
             {
@@ -1124,7 +1124,7 @@ export const RumDrinks: Drinks[] = [
             },
             {
                 measure: '0.5 oz',
-                ingredient: 'Simple Syrup'
+                ingredient: 'Triple sec'
             },
             {
                 measure: '1.0 oz',
