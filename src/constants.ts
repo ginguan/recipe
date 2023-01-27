@@ -1111,7 +1111,7 @@ export const RumDrinks: Drinks[] = [
         name: 'Easy Mai Tai',
         tag: `Rum`,
         method: `Shake & Pour`,
-        glass: 'Short',
+        glass: 'Double',
         note: 'Difficult',
         ingredients: [
             {
