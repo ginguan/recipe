@@ -293,6 +293,7 @@ export const LiqueurDrinkns: Drinks[] = [
                 ingredient: 'Sparkling Wine',
             },
             {
+                measure: '1oz',
                 ingredient: 'Soda water',
             }
         ]
@@ -1647,7 +1648,7 @@ export const BrandyDrinks: Drinks[] =[
     },
     {
         name: 'Mimosa',
-        tag: `Sprkling wine`,
+        tag: `Sparkling wine`,
         method: `Build`,
         glass: 'Champagne flute',
         ingredients: [
