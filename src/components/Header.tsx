@@ -11,7 +11,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
-const pages = ['All','Non-Alcoholic', 'Vodka', 'Liqueur', 'Gin', 'Rum', 'Collins','Quiz'];
+const pages = ['All','Non-Alcoholic', 'Vodka', 'Liqueur', 'Gin', 'Rum', 'Tequila', 'Whiskey', 'Brandy','Collins','Quiz'];
 
 function ResponsiveAppBar({ logo }: { logo: String}) {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -33,7 +33,7 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/recipe"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -44,7 +44,7 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
               textDecoration: 'none',
             }}
           >
-            {logo}
+            Review
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -78,8 +78,9 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
             >
               {pages.map((page) => (
                 <MenuItem key={page} component={'a'}
-                href={`http://ginguan.github.io/recipe/#/${page}`} >
-                  <Typography textAlign="center" >{page}</Typography>
+                // href={`http://ginguan.github.io/recipe/#/${page}`} 
+                href={`/${page}`}>
+                  <Typography textAlign='justify' >{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -90,15 +91,16 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
             noWrap
             component="a"
             href="http://ginguan.github.io/recipe"
+            style={{
+              textAlign:'center'}}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
-              textDecoration: 'none',
+              textDecoration: 'none'
             }}
           >
             {logo}
@@ -108,7 +110,8 @@ function ResponsiveAppBar({ logo }: { logo: String}) {
               <Button
                 key={page}
                 component={'a'}
-                href={`http://ginguan.github.io/recipe/#/${page}`}
+                // href={`http://ginguan.github.io/recipe/#/${page}`}
+                href={`/${page}`}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >

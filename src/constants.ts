@@ -26,7 +26,7 @@ export const NonAlcoholicDrinks: Drinks[] = [
         glass: 'Tall',
         ingredients: [
             {
-                measure: '1.5 oz',
+                measure: '1.0 oz',
                 ingredient: 'Lime Juice',
             },
             {
@@ -293,6 +293,7 @@ export const LiqueurDrinkns: Drinks[] = [
                 ingredient: 'Sparkling Wine',
             },
             {
+                measure: '1oz',
                 ingredient: 'Soda water',
             }
         ]
@@ -1086,16 +1087,677 @@ export const RumDrinks: Drinks[] = [
     {
         name: 'Blue Hawaiian',
         tag: `Rum`,
-        method: ``,
-        glass: '',
+        method: `Shake & Pour`,
+        glass: 'Tall',
         ingredients: [
             {
-                measure: '',
-                ingredient: '',
+                measure: '1.5 oz',
+                ingredient: 'White rum',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Blue Curacao',
+            },
+            {
+                measure: '3.0 oz',
+                ingredient: 'Pineapple juice',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Coconut crea',
+            }
+        ]
+    },
+    {
+        name: 'Easy Mai Tai',
+        tag: `Rum`,
+        method: `Shake & Pour`,
+        glass: 'Double',
+        note: 'Difficult',
+        ingredients: [
+            {
+                measure: '1.0 oz',
+                ingredient: 'Dark rum',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Amaretto',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Triple sec'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lime juice'
             }
         ]
     }
 ]
+
+export const TequilaDrinks: Drinks[] =[
+    {
+        name: 'Tequila Sunrise',
+        tag: `Tequila`,
+        method: `Build on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '2.0 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Granedine',
+            },
+            {
+                ingredient: 'Orange juice',
+            }
+        ]
+    },
+    {
+        name: 'Poloma',
+        tag: `Tequila`,
+        method: `Build on ice`,
+        glass: 'Tall',
+        note: 'Dont forget simple syrup',
+        ingredients: [
+            {
+                measure: '2.0 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Grapefruit juice'
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Simple Syrup'
+            },
+            {
+                ingredient: 'Soda water'
+            }
+        ]
+    },
+    {
+        name: 'Tequila Wallbanger',
+        tag: `Tequila`,
+        method: `Build on ice`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '3/4 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                ingredient: 'Orange juice'
+            },
+            {
+                measure: '1/4 oz',
+                ingredient: 'Galliano'
+            }
+        ]
+    },
+    {
+        name: 'Bloody Maria',
+        tag: `Tequila`,
+        method: `Build on ice, Salted rim`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '2 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '4 dash',
+                ingredient: 'Tabascoo sauce'
+            },
+            {
+                measure: '4 dash',
+                ingredient: 'Worcestershire'
+            },
+            {
+                ingredient: 'Tomato juice'
+            }
+        ]
+    },
+    {
+        name: 'Brave Bull',
+        tag: `Tequila`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {   
+                measure: '0.5 oz',
+                ingredient:' Coffee liqueur'
+            }
+        ]
+    },
+    {
+        name: 'Tequila Paralyzer',
+        tag: `Tequila`,
+        method: `Build on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Coffee Liqueur'
+            },
+            {
+                ingredient: 'Coke'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Cream'
+            }
+        ]
+    },
+    {
+        name: 'Matador',
+        tag: `Tequila`,
+        method: `Shake & Strain`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '2 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '1 oz',
+                ingredient: 'Pineapple juice'
+            },
+            {
+                measure: '1/4 oz',
+                ingredient: 'Lime juice'
+            }
+        ]
+    },
+    {
+        name: 'Margarita',
+        tag: `Tequila`,
+        method: `Shake & Pour, Salted rim`,
+        glass: 'Double Rocks',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient:'Triple sec'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lime juice'
+            }
+        ]
+    },
+    {
+        name: 'Blue Margarita',
+        tag: `Tequila`,
+        method: `Shake & Pour`,
+        glass: 'Double rocks',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Blue Curacao'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lime juice'
+            }
+        ]
+    },
+    {
+        name: 'Golden Margarita',
+        tag: `Tequila`,
+        method: `Shake & Pour`,
+        glass: 'Double rocks',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Grand Marnier'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lime juice'
+            }
+        ]
+    },
+    {
+        name: 'Long Island Iced Tea',
+        tag: `Vodka, Gin, Rum, Tequila`,
+        method: `Builld on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '0.5 oz',
+                ingredient: 'Vodka, Gin, Rum, Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Triple Sec'
+            },
+            {
+                ingredient: 'Coke'
+            },
+            {   
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            }
+        ]
+    },
+    {
+        name: 'Electric Iced Tea',
+        tag: `Vodka, Gin, Rum, Tequila`,
+        method: `Builld on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '0.5 oz',
+                ingredient: 'Vodka, Gin, Rum, Tequila',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Blue Curacao'
+            },
+            {
+                ingredient: '7-Up'
+            },
+            {   
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            }
+        ]
+    }
+]
+
+export const WhiskeyDrinks: Drinks[] =[
+    {
+        name: 'Michael Collins',
+        tag: `Irish Whiskey`,
+        method: `Build on ince`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '2.0 oz',
+                ingredient: 'Irish Whiskey',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Simple Syrup'
+            },
+            {
+                ingredient: 'Soda Water'
+            }
+        ]
+    },
+    {
+        name: 'Lynchburg Lemonade',
+        tag: `Jack Daniels`,
+        method: `Build on ice`,
+        glass: 'Tall',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Jack Daniels',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Triple Sec'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            },
+            {
+                ingredient: '7-UP'
+            }
+        ]
+    },
+    {
+        name: 'Whiskey Sour',
+        tag: `Whiskey`,
+        method: `Wet & Dry Shake`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '2.0 oz',
+                ingredient: 'Whiskey',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Simple syrup'
+            },
+            {
+                measure: '3/4 oz',
+                ingredient: 'Egg White'
+            }, 
+            {
+                ingredient: 'bitters'
+            }
+        ]
+    },
+    {
+        name: 'Manhattan',
+        tag: `Rye`,
+        method: `Stir & Strain`,
+        glass: 'Martini',
+        note: 'Perfect Manhgattan => 0.25oz sweet/dry vermouth',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Whiskey',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Sweet Vermouth'
+            },
+            {
+                measure: '4 dashes',
+                ingredient: 'Bitters'
+            }
+        ]
+    },
+    {
+        name: 'Rob Roy',
+        tag: `Scotch`,
+        method: `Stir & Strain`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Scotch',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Sweet vermouth'
+            },
+            {
+                measure: '4 dash',
+                ingredient: 'Bitters'
+            }
+        ]
+    },
+    {
+        name: 'Emerald',
+        tag: `Irish Whiskey`,
+        method: `Stir & Strain`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Irish Whiskey',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Sweet vermouth'
+            },
+            {
+                measure: '4 dash',
+                ingredient: 'Bitters'
+            }
+        ]
+    },
+    {
+        name: 'Godfather',
+        tag: `Scotch`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '1.5 oz Scotch',
+                ingredient: 'Scotch',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient:'Amaretto'
+            }
+        ]
+    },
+    {
+        name: 'Godmother',
+        tag: `Vodka`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        note: '+ 1oz cream to be Godchild',
+        ingredients: [
+            {
+                measure: '1.5 oz Vodka',
+                ingredient: 'Vodka',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient:'Amaretto'
+            }
+        ]
+    },
+    {
+        name: 'Rusty Nail',
+        tag: `Scotch`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Scotch',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Drambuie (蜂蜜酒)'
+            }
+        ]
+    },
+    {
+        name: 'Boulevardier',
+        tag: `Bourbon`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '2/3 oz',
+                ingredient: 'Burbon',
+            },
+            {
+                measure: '2/3 oz',
+                ingredient: 'Campari'
+            },
+            {
+                measure: '2/3 oz',
+                ingredient: 'Sweet Vermouth'
+            }
+        ]
+    },
+    {
+        name: 'Old Fashioned',
+        tag: `Bourbon`,
+        method: `Muddle`,
+        glass: 'Short / Double',
+        ingredients: [
+            {
+                measure: '1',
+                ingredient: 'Raw Sugar',
+            },
+            {
+                ingredient: 'Bitters'
+            },
+            {
+                measure: 'dash of',
+                ingredient:'Water'
+            },
+            {
+                measure: '2.0 oz',
+                ingredient:'Bourbon'
+            }
+        ]
+    }
+]
+
+export const BrandyDrinks: Drinks[] =[
+    {
+        name: 'Sangria',
+        tag: `Brandy`,
+        method: `Build on ice`,
+        glass: 'Wine glass',
+        ingredients: [
+            {
+                measure: '3.0 oz',
+                ingredient: 'Wine',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Brandy'
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Triple sec'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient:'7-Up'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Orange juice'
+            }
+        ]
+    },
+    {
+        name: 'Mimosa',
+        tag: `Sparkling wine`,
+        method: `Build`,
+        glass: 'Champagne flute',
+        ingredients: [
+            {
+                measure: 'Half',
+                ingredient: 'Sparkling wine',
+            },
+            {
+                measure: 'Half',
+                ingredient:'Orange juice'
+            }
+        ]
+    },
+    {
+        name: 'Sidecar',
+        tag: `Brandy`,
+        method: `Shake & Strain, sugar rim`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Brandy',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Triple sec'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            }
+        ]
+    },
+    {
+        name: 'Sidecar No.Blue',
+        tag: `Brandy`,
+        method: `Shake & Strain, sugar rim`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Brandy',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Blue Curacao'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            }
+        ]
+    },
+    {
+        name: 'Brandy Alexandar',
+        tag: `Brandy`,
+        method: `Shake & Strain`,
+        glass: 'Martini',
+        note: 'Alexandar => Gin',
+        ingredients: [
+            {
+                measure: '1.0 oz',
+                ingredient: 'Brandy',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Cacao'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient:'Cream'
+            }
+        ]
+    },
+    {
+        name: 'French Connection',
+        tag: `Cognac`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '1.0 oz',
+                ingredient: 'Cognac',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Amaretto'
+            }
+        ]
+    },
+    {
+        name: 'Brandy Seperator/ Dirty Mother',
+        tag: `Brandy`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        note: 'Add 1.0 oz cream => Dirty White Mother',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Brandy',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Coffee liqueur'
+            }
+        ]
+    }
+]
+
 export const Template: Drinks[] = [
     {
         name: '',
