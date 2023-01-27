@@ -1466,6 +1466,7 @@ export const WhiskeyDrinks: Drinks[] =[
         tag: `Rye`,
         method: `Stir & Strain`,
         glass: 'Martini',
+        note: 'Perfect Manhgattan => 0.25oz sweet/dry vermouth',
         ingredients: [
             {
                 measure: '1.5 oz',
@@ -1480,23 +1481,280 @@ export const WhiskeyDrinks: Drinks[] =[
                 ingredient: 'Bitters'
             }
         ]
+    },
+    {
+        name: 'Rob Roy',
+        tag: `Scotch`,
+        method: `Stir & Strain`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Scotch',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Sweet vermouth'
+            },
+            {
+                measure: '4 dash',
+                ingredient: 'Bitters'
+            }
+        ]
+    },
+    {
+        name: 'Emerald',
+        tag: `Irish Whiskey`,
+        method: `Stir & Strain`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Irish Whiskey',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Sweet vermouth'
+            },
+            {
+                measure: '4 dash',
+                ingredient: 'Bitters'
+            }
+        ]
+    },
+    {
+        name: 'Godfather',
+        tag: `Scotch`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '1.5 oz Scotch',
+                ingredient: 'Scotch',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient:'Amaretto'
+            }
+        ]
+    },
+    {
+        name: 'Godmother',
+        tag: `Vodka`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        note: '+ 1oz cream to be Godchild',
+        ingredients: [
+            {
+                measure: '1.5 oz Vodka',
+                ingredient: 'Vodka',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient:'Amaretto'
+            }
+        ]
+    },
+    {
+        name: 'Rusty Nail',
+        tag: `Scotch`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Scotch',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Drambuie (蜂蜜酒)'
+            }
+        ]
+    },
+    {
+        name: 'Boulevardier',
+        tag: `Bourbon`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '2/3 oz',
+                ingredient: 'Burbon',
+            },
+            {
+                measure: '2/3 oz',
+                ingredient: 'Campari'
+            },
+            {
+                measure: '2/3 oz',
+                ingredient: 'Sweet Vermouth'
+            }
+        ]
+    },
+    {
+        name: 'Old Fashioned',
+        tag: `Bourbon`,
+        method: `Muddle`,
+        glass: 'Short / Double',
+        ingredients: [
+            {
+                measure: '1',
+                ingredient: 'Raw Sugar',
+            },
+            {
+                ingredient: 'Bitters'
+            },
+            {
+                measure: 'dash of',
+                ingredient:'Water'
+            },
+            {
+                measure: '2.0 oz',
+                ingredient:'Bourbon'
+            }
+        ]
     }
 ]
 
 export const BrandyDrinks: Drinks[] =[
     {
-        name: 'Sidecar',
-        tag: ``,
-        method: ``,
-        glass: '',
+        name: 'Sangria',
+        tag: `Brandy`,
+        method: `Build on ice`,
+        glass: 'Wine glass',
         ingredients: [
             {
-                measure: '',
-                ingredient: '',
+                measure: '3.0 oz',
+                ingredient: 'Wine',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Brandy'
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Triple sec'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient:'7-Up'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Orange juice'
+            }
+        ]
+    },
+    {
+        name: 'Mimosa',
+        tag: `Sprkling wine`,
+        method: `Build`,
+        glass: 'Champagne flute',
+        ingredients: [
+            {
+                measure: 'Half',
+                ingredient: 'Sparkling wine',
+            },
+            {
+                measure: 'Half',
+                ingredient:'Orange juice'
+            }
+        ]
+    },
+    {
+        name: 'Sidecar',
+        tag: `Brandy`,
+        method: `Shake & Strain, sugar rim`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Brandy',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Triple sec'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            }
+        ]
+    },
+    {
+        name: 'Sidecar No.Blue',
+        tag: `Brandy`,
+        method: `Shake & Strain, sugar rim`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Brandy',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Blue Curacao'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Lemon juice'
+            }
+        ]
+    },
+    {
+        name: 'Brandy Alexandar',
+        tag: `Brandy`,
+        method: `Shake & Strain`,
+        glass: 'Martini',
+        note: 'Alexandar => Gin',
+        ingredients: [
+            {
+                measure: '1.0 oz',
+                ingredient: 'Brandy',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Cacao'
+            },
+            {
+                measure: '1.0 oz',
+                ingredient:'Cream'
+            }
+        ]
+    },
+    {
+        name: 'French Connection',
+        tag: `Cognac`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        ingredients: [
+            {
+                measure: '1.0 oz',
+                ingredient: 'Cognac',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Amaretto'
+            }
+        ]
+    },
+    {
+        name: 'Brandy Seperator/ Dirty Mother',
+        tag: `Brandy`,
+        method: `Gentlemen's`,
+        glass: 'Short',
+        note: 'Add 1.0 oz cream => Dirty White Mother',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Brandy',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Coffee liqueur'
             }
         ]
     }
-
 ]
 
 export const Template: Drinks[] = [

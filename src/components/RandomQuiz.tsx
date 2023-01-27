@@ -1,11 +1,10 @@
 import { Button } from "@mui/material";
-import _, { forEach } from "lodash";
-import React from 'react';
+import TextField from '@mui/material/TextField';
+import _ from "lodash";
 import { useState } from "react";
 import { Drinks } from "../models/Drink";
 import DrinkTable from "./DrinkTable";
 import Header from "./Header";
-import TextField from '@mui/material/TextField';
 
 const RandomQuiz = ({ drinkSet }: { drinkSet: Drinks[] }) => {
 

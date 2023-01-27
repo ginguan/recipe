@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { Button } from '@mui/material';
 import Box from '@mui/material/Box';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
@@ -8,13 +10,9 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { LiqueurDrinkns, NonAlcoholicDrinks, VodkaDrinks } from '../constants';
-import { Drinks } from '../models/Drink';
-import { Button, Typography } from '@mui/material';
 import * as _ from "lodash";
-import { useEffect } from 'react';
+import React, { useState } from 'react';
+import { Drinks } from '../models/Drink';
 import Header from './Header';
 
 const Row = ({ row, setRows, rows }: { row: Drinks, setRows:any, rows: Drinks[]}) => {
@@ -83,9 +81,6 @@ const DrinkTable = ({ drinkSet, header, isAnswer }: { drinkSet: Drinks[], header
     return (
         <TableContainer>
             {!isAnswer && <Header logo={header}/>}
-            {/* <Typography variant="h4" component="h2" style={{paddingLeft:'90px', flexDirection:'row'}}>
-                {header} 
-            </Typography> */}
             <Table align='center' style={{ width: "80%", tableLayout: "auto" }} >
                 <TableHead>
                     <TableRow>
