@@ -1,6 +1,4 @@
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { Button } from '@mui/material';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
@@ -10,23 +8,24 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import * as _ from "lodash";
-import React, { useState } from 'react';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { LiqueurDrinkns, NonAlcoholicDrinks, VodkaDrinks } from '../constants';
 import { Drinks } from '../models/Drink';
+import { Button, TextField, Typography } from '@mui/material';
+import * as _ from "lodash";
+import { useEffect } from 'react';
 import Header from './Header';
 
 const Row = ({ row, setRows, rows }: { row: Drinks, setRows:any, rows: Drinks[]}) => {
 
     const [open, setOpen] = useState(false);
-    const tryFillter=(tag: String)=>{
-        // setRows(rows.filter((item)=>{item.tag === row.tag}))
-        console.log('rows',rows, row.tag)
-        const tagName = row.tag
-        console.log('rows',rows.filter((item)=>{item.tag == tagName}))
-    }
+
+
     return (
 
         <React.Fragment>
+
             <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
                 <TableCell>
                     <IconButton
@@ -40,7 +39,7 @@ const Row = ({ row, setRows, rows }: { row: Drinks, setRows:any, rows: Drinks[]}
                 <TableCell component="th" scope="row" style={{ fontWeight: 'bold', color: 'MidnightBlue' }}>
                     {row.name}
                 </TableCell>
-                <TableCell onClick={()=>tryFillter(row.tag)}>{row.tag}</TableCell>
+                <TableCell >{row.tag}</TableCell>
                 <TableCell >{row.glass}</TableCell>
                 <TableCell >{row.method}</TableCell>
                 <TableCell >{row.note}</TableCell>
@@ -78,13 +77,28 @@ const DrinkTable = ({ drinkSet, header, isAnswer }: { drinkSet: Drinks[], header
     const sortArray = (tags: keyof Drinks) => {
         setRows(_.orderBy(rows, tags))
     }
+    const [filteredDrinks, setFilteredDrinks] = useState(drinkSet);
+    const [searchTerm, setSearchTerm] = useState('')
+
+
+    const handleSearch = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setSearchTerm(event.target.value);
+        setFilteredDrinks(rows.filter(drink => (drink.name.toLowerCase().includes(event.target.value.toLowerCase())||(drink.tag.toLowerCase().includes(event.target.value.toLowerCase())) ||(drink.glass.toLowerCase().includes(event.target.value.toLowerCase()))||(drink.method.toLowerCase().includes(event.target.value.toLowerCase())))))
+    }
     return (
+        
         <TableContainer>
+                        
             {!isAnswer && <Header logo={header}/>}
+            {!isAnswer &&<TextField onChange={(event)=>{handleSearch(event)}} style={{padding:'20px'}} placeholder='search' value={searchTerm}/>}
             <Table align='center' style={{ width: "80%", tableLayout: "auto" }} >
                 <TableHead>
                     <TableRow>
-                        <TableCell><Button onClick={() => setRows(drinkSet)}>Reset</Button></TableCell>
+                        <TableCell><Button onClick={() => {
+                            setRows(drinkSet)
+                            setFilteredDrinks(drinkSet)
+                            setSearchTerm('')
+                            }}>Reset</Button></TableCell>
                         <TableCell style={{ fontWeight: 'bold' }} sortDirection='asc'>Drinks<Button onClick={() => sortArray('name')}>^</Button></TableCell>
                         <TableCell style={{ fontWeight: 'bold' }} sortDirection='asc'>Base<Button onClick={() => sortArray('tag')}>^</Button></TableCell>
                         <TableCell style={{ fontWeight: 'bold' }} sortDirection='asc'>Glasss<Button onClick={() => sortArray('glass')}>^</Button></TableCell>
@@ -93,8 +107,8 @@ const DrinkTable = ({ drinkSet, header, isAnswer }: { drinkSet: Drinks[], header
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {rows.map((row) => (
-                        <Row row={row} setRows={setRows} rows={rows}/>
+                    {filteredDrinks.map((row) => (
+                        <Row row={row} setRows={setRows} rows={filteredDrinks}/>
                     ))}
                 </TableBody>
             </Table>
