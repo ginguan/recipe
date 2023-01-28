@@ -74,13 +74,14 @@ const Row = ({ row, setRows, rows }: { row: Drinks, setRows:any, rows: Drinks[]}
 
 const DrinkTable = ({ drinkSet, header, isAnswer }: { drinkSet: Drinks[], header: String, isAnswer: Boolean }) => {
     const [rows, setRows] = useState(drinkSet)
-    const sortArray = (tags: keyof Drinks) => {
-        setRows(_.orderBy(rows, tags))
-    }
+
     const [filteredDrinks, setFilteredDrinks] = useState(drinkSet);
     const [searchTerm, setSearchTerm] = useState('')
 
-
+    const sortArray = (tags: keyof Drinks) => {
+        setRows(_.orderBy(rows, tags))
+        setFilteredDrinks(_.orderBy(filteredDrinks, tags))
+    }
     const handleSearch = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setSearchTerm(event.target.value);
         setFilteredDrinks(rows.filter(drink => (drink.name.toLowerCase().includes(event.target.value.toLowerCase())||(drink.tag.toLowerCase().includes(event.target.value.toLowerCase())) ||(drink.glass.toLowerCase().includes(event.target.value.toLowerCase()))||(drink.method.toLowerCase().includes(event.target.value.toLowerCase())))))
