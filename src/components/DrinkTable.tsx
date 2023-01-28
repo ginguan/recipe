@@ -74,14 +74,18 @@ const Row = ({ row, setRows, rows }: { row: Drinks, setRows:any, rows: Drinks[]}
 
 const DrinkTable = ({ drinkSet, header, isAnswer }: { drinkSet: Drinks[], header: String, isAnswer: Boolean }) => {
     const [rows, setRows] = useState(drinkSet)
-
     const [filteredDrinks, setFilteredDrinks] = useState(drinkSet);
     const [searchTerm, setSearchTerm] = useState('')
-
+    const [sortDirect,setSortDirect] = useState('asc' as _.Many<boolean | "asc" | "desc">) 
     const sortArray = (tags: keyof Drinks) => {
-        setRows(_.orderBy(rows, tags))
-        setFilteredDrinks(_.orderBy(filteredDrinks, tags))
+        setRows(_.orderBy(rows, tags, sortDirect))
+        setFilteredDrinks(_.orderBy(filteredDrinks, tags, sortDirect))
+        const newSort = sortDirect === 'asc' as _.Many<boolean | "asc" | "desc">? 'desc' as _.Many<boolean | "asc" | "desc"> :'asc' as _.Many<boolean | "asc" | "desc">
+        setSortDirect(newSort)
     }
+
+
+
     const handleSearch = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setSearchTerm(event.target.value);
         setFilteredDrinks(rows.filter(drink => (drink.name.toLowerCase().includes(event.target.value.toLowerCase())||(drink.tag.toLowerCase().includes(event.target.value.toLowerCase())) ||(drink.glass.toLowerCase().includes(event.target.value.toLowerCase()))||(drink.method.toLowerCase().includes(event.target.value.toLowerCase())))))
@@ -92,7 +96,7 @@ const DrinkTable = ({ drinkSet, header, isAnswer }: { drinkSet: Drinks[], header
                         
             {!isAnswer && <Header logo={header}/>}
             {!isAnswer &&<TextField onChange={(event)=>{handleSearch(event)}} style={{padding:'20px'}} placeholder='search' value={searchTerm}/>}
-            <Table align='center' style={{ width: "80%", tableLayout: "auto" }} >
+            <Table align='center' style={{ width: "80%", tableLayout:'fixed'}} >
                 <TableHead>
                     <TableRow>
                         <TableCell><Button onClick={() => {
