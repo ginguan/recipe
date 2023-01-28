@@ -353,7 +353,7 @@ export const VodkaDrinks: Drinks[] = [
         glass: 'Short',
         ingredients: [
             {
-                measure: '1.5 oz',
+                measure: '1.0 oz',
                 ingredient: 'Vodka',
             },
             {
