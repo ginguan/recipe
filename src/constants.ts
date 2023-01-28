@@ -667,6 +667,26 @@ export const VodkaDrinks: Drinks[] = [
         ]
     },
     {
+        name: 'Purple Haze',
+        tag: 'Vodka',
+        method: `Shake & Strain`,
+        glass: 'Martini',
+        ingredients: [
+            {
+                measure: '1.5 oz',
+                ingredient: 'Vodka',
+            },
+            {
+                measure: '0.5 oz',
+                ingredient: 'Blue Curacao',
+            },
+            {
+                measure: '1.0 oz',
+                ingredient: 'Cranberry juice',
+            }
+        ]
+    },
+    {
         name: 'Cosmopolitan',
         tag: 'Vodka',
         method: `Shake & Strain`,
