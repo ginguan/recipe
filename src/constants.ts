@@ -1,4 +1,4 @@
-import { Drinks } from './models/Drink'
+import { Drinks, Review } from './models/Drink'
 
 export const NonAlcoholicDrinks: Drinks[] = [
     {
@@ -768,7 +768,8 @@ export const VodkaDrinks: Drinks[] = [
                 measure: '2/3 oz',
                 ingredient: 'Sweet Vermouth',
             },
-        ]}
+        ]
+    }
 ]
 
 export const GinDrinkns: Drinks[] = [
@@ -934,7 +935,7 @@ export const GinDrinkns: Drinks[] = [
         tag: `Gin/Vodka`,
         method: `Stir & Strain`,
         glass: 'Martini',
-        note:'Olive/Lemon twist',
+        note: 'Olive/Lemon twist',
         ingredients: [
             {
                 measure: '1.5 oz',
@@ -951,7 +952,7 @@ export const GinDrinkns: Drinks[] = [
         tag: `Gin/Vodka`,
         method: `Stir & Strain`,
         glass: 'Martini',
-        note:`Dirty -  1 spoonful olive brine`,
+        note: `Dirty -  1 spoonful olive brine`,
         ingredients: [
             {
                 measure: '1.75 oz',
@@ -968,7 +969,7 @@ export const GinDrinkns: Drinks[] = [
         tag: `Gin/Vodka`,
         method: `Stir & Strain`,
         glass: 'Martini',
-        note:'Roll the dry vermouth',
+        note: 'Roll the dry vermouth',
         ingredients: [
             {
                 measure: '2.0 oz',
@@ -980,7 +981,7 @@ export const GinDrinkns: Drinks[] = [
             }
         ]
     }
-    
+
 ]
 
 export const RumDrinks: Drinks[] = [
@@ -1020,7 +1021,7 @@ export const RumDrinks: Drinks[] = [
         tag: `Rum`,
         method: `Shake & Strain`,
         glass: 'Martini',
-        note:'Rum version Gimlet',
+        note: 'Rum version Gimlet',
         ingredients: [
             {
                 measure: '2.0 oz',
@@ -1031,8 +1032,8 @@ export const RumDrinks: Drinks[] = [
                 ingredient: 'Lime juice',
             },
             {
-                measure:'0.5 oz',
-                ingredient:'Simple Syrup'
+                measure: '0.5 oz',
+                ingredient: 'Simple Syrup'
             }
         ]
     },
@@ -1155,7 +1156,7 @@ export const RumDrinks: Drinks[] = [
     }
 ]
 
-export const TequilaDrinks: Drinks[] =[
+export const TequilaDrinks: Drinks[] = [
     {
         name: 'Tequila Sunrise',
         tag: `Tequila`,
@@ -1251,9 +1252,9 @@ export const TequilaDrinks: Drinks[] =[
                 measure: '1.5 oz',
                 ingredient: 'Tequila',
             },
-            {   
+            {
                 measure: '0.5 oz',
-                ingredient:' Coffee liqueur'
+                ingredient: ' Coffee liqueur'
             }
         ]
     },
@@ -1312,7 +1313,7 @@ export const TequilaDrinks: Drinks[] =[
             },
             {
                 measure: '0.5 oz',
-                ingredient:'Triple sec'
+                ingredient: 'Triple sec'
             },
             {
                 measure: '1.0 oz',
@@ -1377,7 +1378,7 @@ export const TequilaDrinks: Drinks[] =[
             {
                 ingredient: 'Coke'
             },
-            {   
+            {
                 measure: '1.0 oz',
                 ingredient: 'Lemon juice'
             }
@@ -1400,7 +1401,7 @@ export const TequilaDrinks: Drinks[] =[
             {
                 ingredient: '7-Up'
             },
-            {   
+            {
                 measure: '1.0 oz',
                 ingredient: 'Lemon juice'
             }
@@ -1408,7 +1409,7 @@ export const TequilaDrinks: Drinks[] =[
     }
 ]
 
-export const WhiskeyDrinks: Drinks[] =[
+export const WhiskeyDrinks: Drinks[] = [
     {
         name: 'Michael Collins',
         tag: `Irish Whiskey`,
@@ -1476,7 +1477,7 @@ export const WhiskeyDrinks: Drinks[] =[
             {
                 measure: '3/4 oz',
                 ingredient: 'Egg White'
-            }, 
+            },
             {
                 ingredient: 'bitters'
             }
@@ -1555,7 +1556,7 @@ export const WhiskeyDrinks: Drinks[] =[
             },
             {
                 measure: '0.5 oz',
-                ingredient:'Amaretto'
+                ingredient: 'Amaretto'
             }
         ]
     },
@@ -1572,7 +1573,7 @@ export const WhiskeyDrinks: Drinks[] =[
             },
             {
                 measure: '0.5 oz',
-                ingredient:'Amaretto'
+                ingredient: 'Amaretto'
             }
         ]
     },
@@ -1619,7 +1620,7 @@ export const WhiskeyDrinks: Drinks[] =[
         glass: 'Short / Double',
         ingredients: [
             {
-                measure: '1',
+                measure: `Section 1`,
                 ingredient: 'Raw Sugar',
             },
             {
@@ -1627,17 +1628,17 @@ export const WhiskeyDrinks: Drinks[] =[
             },
             {
                 measure: 'dash of',
-                ingredient:'Water'
+                ingredient: 'Water'
             },
             {
                 measure: '2.0 oz',
-                ingredient:'Bourbon'
+                ingredient: 'Bourbon'
             }
         ]
     }
 ]
 
-export const BrandyDrinks: Drinks[] =[
+export const BrandyDrinks: Drinks[] = [
     {
         name: 'Sangria',
         tag: `Brandy`,
@@ -1658,7 +1659,7 @@ export const BrandyDrinks: Drinks[] =[
             },
             {
                 measure: '1.0 oz',
-                ingredient:'7-Up'
+                ingredient: '7-Up'
             },
             {
                 measure: '1.0 oz',
@@ -1678,7 +1679,7 @@ export const BrandyDrinks: Drinks[] =[
             },
             {
                 measure: 'Half',
-                ingredient:'Orange juice'
+                ingredient: 'Orange juice'
             }
         ]
     },
@@ -1739,7 +1740,7 @@ export const BrandyDrinks: Drinks[] =[
             },
             {
                 measure: '1.0 oz',
-                ingredient:'Cream'
+                ingredient: 'Cream'
             }
         ]
     },
@@ -1778,17 +1779,246 @@ export const BrandyDrinks: Drinks[] =[
     }
 ]
 
-export const Template: Drinks[] = [
+export const Template: Review[] = [
     {
-        name: '',
-        tag: ``,
-        method: ``,
-        glass: '',
-        ingredients: [
-            {
-                measure: '',
-                ingredient: '',
-            }
-        ]
-    }
+        question: ``,
+        answer: ``,
+        section: ``
+    },
+]
+
+export const ReviewQuestion: Review[] = [
+    {
+        question: 'List 6 essential items of bar equipment. ',
+        answer: `Bar Rag, 
+        Bar Mat, 
+        Shaker Set, 
+        Ice Scoop, 
+        Speed Spouts, 
+        Waiter's Friend (Wine Opener), 
+        Pop Gun`,
+        section: `Section 1`
+    },
+    {
+        question: 'Name three common non alcoholic mixes used in cocktails?',
+        answer: `Juices,
+        Pop or Soda
+        Dairy`,
+        section: `Section 1`
+    },
+    {
+        question: `What 2 ingredients are needed to start fermentation?`,
+        answer: `Yeast and a Sugary Liquid`,
+        section: `Section 1`
+    },
+    {
+        question: `What are the 3 products of fermentation?`,
+        answer: `Alcohol,
+        CO2,
+        Congeners`,
+        section: `Section 1`
+    },
+    {
+        question: `What are Congeners?`,
+        answer: `Flavour and Aroma Compounds`,
+        section: `Section 1`
+    },
+    {
+        question: `List 3 examples of fermented beverages`,
+        answer: `Beer,
+        Wine,
+        Cider,
+        Sake,
+        Mead`,
+        section: `Section 1`
+    },
+    {
+        question: `What concentration of alcohol do distillers typically ferment to before distilling?`,
+        answer: `8-10% is typical`,
+        section: `Section 1`
+    },
+    {
+        question: `How many times must a fermented liquid be distilled to make a spirit?`,
+        answer: `At least 2 times`,
+        section: `Section 1`
+    },
+    {
+        question: `What are the two types of stills used to create spirits?`,
+        answer: `Pot Still and Column Still`,
+        section: `Section 1`
+    },
+    {
+        question: `What kind of still is used to make a Neutral Spirit?`,
+        answer: `Column`,
+        section: `Section 1`
+    },
+    {
+        question: `What kind of still is most commonly used to make Characterful Spirits?`,
+        answer: `Pot`,
+        section: `Section 1`
+    },
+    {
+        question: `Where was Vodka created?`,
+        answer: `Eastern Europe`,
+        section: `Section 1`
+    },
+    {
+        question: `Name 3 things Vodka is made from?`,
+        answer: `Grains, potatoes, grapes`,
+        section: `Section 1`
+    },
+    {
+        question: `What is the typical bottled ABV (% Alcohol By Volume) of Vodka?`,
+        answer: `40% ABV`,
+        section: `Section 1`
+    },
+    {
+        question: `What flavour is Vodka?`,
+        answer: `Neutral`,
+        section: `Section 1`
+    },
+    {
+        question: `List 3 bar brands of Vodka`,
+        answer: `Aboslute. Skyy, Russian Standard, Polar Ice`,
+        section: `Section 1`
+    }, {
+        question: `What are the 3 Rules of a Highball?`,
+        answer: `1. Make in a short glass, unless asked for tall glass. 
+        2. Ask single or double. 
+        3. Ask 'Well' or "Premium."`,
+        section: `Section 1`
+    }, {
+        question: `3 Vodka drinks w/ grapefruit juice?`,
+        answer: `Greyhound,
+        Seabreeze,
+        Salty Dog`,
+        section: `Section 1`
+    }, {
+        question: `List 2 Virgin Cocktails`,
+        answer: `Shirley Temple, Lime Rickey`,
+        section: `Section 1`
+    },
+    {
+        question: `How much sugar must be in a Liqueur?`,
+        answer: `minimum 2.5%`,
+        section: `Section 2`
+    },
+    {
+        question: `List 3 different base spirits for liqueurs`,
+        answer: `Neutral spirit (Creme de Banane, Sour Puss, Amaretto),\n
+        Rum (Kahlua, Malibu, Amarula),\n
+        Whiskies (Drambuie, Fireball, Southern Comfort),\n
+        Cognac (Grand Marnier, Chambord),\n
+        Tequila (Patron XO, Baja Rosa)`,
+        section: `Section 2`
+    },
+    {
+        question: `What are 3 methods of flavouring?`,
+        answer: `Maceration,
+        Re-distillation,
+        Compounding`,
+        section: `Section 2`
+    },
+    {
+        question: `How much sugar is added to 1 cup of boiling water to make simple syrup?`,
+        answer: `1 Cup`,
+        section: `Section 2`
+    },
+    {
+        question: `Name 2 herbal flavoured liqueurs`,
+        answer: `Creme de Menthe,
+        Peppermint Schnapps,
+        Jagermeister,
+        Goldschlager,
+        Chartreuse,
+        Galliano`,
+        section: `Section 2`
+    },
+    {
+        question: `Name 2 anise flavoured liqueurs`,
+        answer: `Ouzo,
+        Sambuca,
+        Pernod,
+        Ricard,
+        Raki,
+        Absinthe doesn't have sugar in it, so it's not a liqueur`,
+        section: `Section 2`
+    },
+    {
+        question: `Name 3 orange flavoured liqueurs`,
+        answer: `Triple Sec,
+        Curacao,
+        Blue Curacao,
+        Grand Marnier,
+        Cointreau`,
+        section: `Section 2`
+    },
+    {
+        question: `Name 2 coffee flavoured liqueurs`,
+        answer: `Kahlua,
+        Tia Maria,
+        Cafe de Oro`,
+        section: `Section 2`
+    },
+    {
+        question: `Name 2 nut flavoured liqueurs. What kind of nut are they?`,
+        answer: `Amaretto (almond),
+        Disaronno (almond... but doesn't use almonds),
+        Frangelico (hazelnut)`,
+        section: `Section 2`
+    },
+    {
+        question: `Name 2 cognac based liqueurs`,
+        answer: `Grand Marnier,
+        Chambord,
+        Alize,
+        Hypnotiq`,
+        section: `Section 2`
+    },
+    {
+        question: `Work in Progress`,
+        answer: ``,
+        section: `Section 2`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 2`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 2`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 2`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 2`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 2`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 2`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 2`
+    },
+
+
+
+
+
+
 ]

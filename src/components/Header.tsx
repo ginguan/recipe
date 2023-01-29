@@ -11,6 +11,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
+
 const pages = ['All','Non-Alcoholic', 'Vodka', 'Liqueur', 'Gin', 'Rum', 'Tequila', 'Whiskey', 'Brandy','Collins','Quiz'];
 
 function ResponsiveAppBar({ logo }: { logo: String}) {
