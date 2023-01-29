@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
 
-const pages = ['All','Non-Alcoholic', 'Vodka', 'Liqueur', 'Gin', 'Rum', 'Tequila', 'Whiskey', 'Brandy','Collins','Quiz'];
+const pages = ['All','Non-Alcoholic', 'Vodka', 'Liqueur', 'Gin', 'Rum', 'Tequila', 'Whiskey', 'Brandy','Quiz','Review'];
 
 function ResponsiveAppBar({ logo }: { logo: String}) {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
