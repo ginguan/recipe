@@ -1783,7 +1783,7 @@ export const Template: Review[] = [
     {
         question: ``,
         answer: ``,
-        section: ``
+        section: `Section 3`
     },
 ]
 
@@ -1800,7 +1800,7 @@ export const ReviewQuestion: Review[] = [
         section: `Section 1`
     },
     {
-        question: 'Name three common non alcoholic mixes used in cocktails?',
+        question: 'Name 3 common non alcoholic mixes used in cocktails?',
         answer: `Juices,
         Pop or Soda
         Dairy`,
@@ -1843,7 +1843,7 @@ export const ReviewQuestion: Review[] = [
         section: `Section 1`
     },
     {
-        question: `What are the two types of stills used to create spirits?`,
+        question: `What are the 2 types of stills used to create spirits?`,
         answer: `Pot Still and Column Still`,
         section: `Section 1`
     },
@@ -1976,46 +1976,127 @@ export const ReviewQuestion: Review[] = [
         section: `Section 2`
     },
     {
-        question: `Work in Progress`,
-        answer: ``,
+        question: `Name a liqueur that uses whiskies as a base?`,
+        answer: `Drambuie (Scotch whisky),
+        Fireball (Canadian whisky),
+        Southern Comfort (bourbon),
+        Yukon Jack (Canadian whisky)`,
         section: `Section 2`
+    },
+    {
+        question: `Name 2 Cream liqueurs.`,
+        answer: `Baileys, Carolans`,
+        section: `Section 2`
+    },
+    {
+        question: `What would you substitute for Cointreau if you didn't have it?`,
+        answer: `Triple Sec`,
+        section: `Section 2`
+    },
+    {
+        question: `What flavour is Galliano? What cocktails used Galliano?`,
+        answer: `Vanilla, 
+        Bartender's RB, Harvey Wallbanger, Golden Cadillac`,
+        section: `Section 2`
+    },
+    {
+        question: `Give 2 examples of Amaros`,
+        answer: `Campari, Aperol. 
+        Amaro means 'bitter' in Italian.`,
+        section: `Section 2`
+    },
+    {
+        question: `What flavour is Grenadine?`,
+        answer: `Pomegranate`,
+        section: `Section 2`
+    },
+    {
+        question: `What is a 'Dry Shake'?`,
+        answer: `Shake without ice`,
+        section: `Section 2`
+    },
+    {
+        question: `Why is egg white added to an Amaretto Sour?`,
+        answer: `For texture and appearance (To make foam)`,
+        section: `Section 2`
+    },
+    {
+        question: `What is the difference between Screwdriver and Harvey Wallbanger?`,
+        answer: `1/4 oz Galliano`,
+        section: `Section 2`
+    },
+    {
+        question: `2 examples of shaken shots`,
+        answer: `Lemon drop, 
+        Kamikaze,
+        Broken Down Golf Cart`,
+        section: `Section 2`
+    },
+    {
+        question: `What is the middle layer in a B52?`,
+        answer: `Irish Cream`,
+        section: `Section 2`
+    },
+    {
+        question: `What is a Neutral Spirit?`,
+        answer: `A spirit without flavour, distilled to at least 95%ABV`,
+        section: `Section 3`
+    },
+    {
+        question: `What is used to flavour Gins and what is the primary ingredient?`,
+        answer: `Botanicals,
+        primarily Juniper`,
+        section: `Section 3`
+    },
+    {
+        question: `List 3 bar brands of Gin`,
+        answer: `Beefeater,
+        Tanqueray,
+        Gordon's,
+        Gilbey's,
+        Bombay Sapphire`,
+        section: `Section 3`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 2`
+        section: `Section 3`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 2`
+        section: `Section 3`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 2`
+        section: `Section 3`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 2`
+        section: `Section 3`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 2`
+        section: `Section 3`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 2`
+        section: `Section 3`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 2`
+        section: `Section 3`
     },
-
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 3`
+    },
 
 
 
