@@ -1779,14 +1779,6 @@ export const BrandyDrinks: Drinks[] = [
     }
 ]
 
-export const Template: Review[] = [
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 3`
-    },
-]
-
 export const ReviewQuestion: Review[] = [
     {
         question: 'List 6 essential items of bar equipment. ',
@@ -2106,82 +2098,309 @@ export const ReviewQuestion: Review[] = [
         Shake & Strain: Lemon drop,
         Stir & Strain: Dry Martini,
         Shake & Pour: Margarita`,
-        section: `Section 3`
+        section: `Section 4`
     },
     {
-        question: `Work in progress`,
-        answer: ``,
+        question: `What is Rum made from?`,
+        answer: `Molasses,
+        some use sugar cane juice, but most use molasses`,
         section: `Section 4`
+    },
+    {
+        question: `List 3 classifications of Rum`,
+        answer: `White,
+        Amber,
+        Dark`,
+        section: `Section 4`
+    },
+    {
+        question: `What type of glass is a Daiquiri served in?`,
+        answer: `Martini glass`,
+        section: `Section 4`
+    },
+    {
+        question: `What is the difference between a Daiquiri and a Gimlet?`,
+        answer: `Daquiri uses Rum.
+        Gimlet uses Gin.`,
+        section: `Section 4`
+    },
+    {
+        question: `What is the ABV of 151 Overproof Rum?`,
+        answer: `75.5%`,
+        section: `Section 4`
+    },
+    {
+        question: `What Rum should be used for a Dark & Stormy?`,
+        answer: `Goslings Black Seal Rum`,
+        section: `Section 4`
+    },
+    {
+        question: `Name 2 brands of White Rum?`,
+        answer: `Bacardi
+        Captain Morgan
+        Lamb's White
+        Havana 3yr`,
+        section: `Section 4`
+    },
+    {
+        question: `What region is best known for producing Rum?`,
+        answer: `Caribbean`,
+        section: `Section 4`
+    },
+    {
+        question: `Name 2 cocktails with Ginger Beer`,
+        answer: `Moscow Mule
+        Dark & Stormy`,
+        section: `Section 4`
+    },
+    {
+        question: `Name 4 different cocktails that use Pineapple Juice`,
+        answer: `Pina Colada
+        Chi-Chi
+        Blue Hawaiian
+        Matador
+        Bay Breeze`,
+        section: `Section 4`
+    },
+    {
+        question: `Which Rum cocktail did Tom Cruise not know in 'Cocktail'?`,
+        answer: `Cuba Libre`,
+        section: `Section 4`
+    },
+    {
+        question: `Name a Liqueur that uses Rum as the base spirit`,
+        answer: `Coffee Liqueur
+        Malibu`,
+        section: `Section 4`
+    },
+    {
+        question: `What is the name of the Vodka version of a Piña Colada?`,
+        answer: `Chi-chi`,
+        section: `Section 4`
+    },
+    {
+        question: `Where is Tequila made?`,
+        answer: `The State of Jalisco
+        Country: Mexico`,
+        section: `Section 4`
+    },
+    {
+        question: `List 2 bar brand Tequilas`,
+        answer: `Jose Cuervo
+        Sauza
+        El Jimador (100% Blue Agave)
+        Cazadores (100% Blue Agave)`,
+        section: `Section 4`
+    },
+    {
+        question: `List 2 Premium Tequilas`,
+        answer: `Patron
+        Don Julio
+        Clase Azul
+        Casamigos
+        Teremana
+        Hornitos
+        Espolon`,
+        section: `Section 4`
+    },    {
+        question: `What are 2 differences between Mezcal and Tequila?`,
+        answer: `Tequila made in Jalisco... Mezcal made in other areas.
+        Tequila uses Blue Agave, mezcal uses many other agave.
+        Tequila oven cooks the pina, mezcal roasts pina in fire pits`,
+        section: `Section 4`
+    },    {
+        question: `What are FOUR age types of tequila?`,
+        answer: `Blanco (<2 months)
+        Reposado (2-12 months)
+        Anejo (1-3 years)
+        Extra Anejo (>3 years)`,
+        section: `Section 4`
+    },    {
+        question: `What juices go in our tequila based 'martini'?`,
+        answer: `Pineapple with a splash of lime (Matador)`,
+        section: `Section 4`
+    },
+    {
+        question: `Name 3 things Whiskies are made from?`,
+        answer: `Corn
+        Barley
+        Rye
+        Wheat`,
+        section: `Section 5`
+    },
+    {
+        question: `What is Single Malt Scotch made from?`,
+        answer: `100% Malted Barley`,
+        section: `Section 5`
+    },    {
+        question: `What are Bourbon and Tennessee Whiskies made from?`,
+        answer: `Minimum 51% Corn`,
+        section: `Section 5`
+    },    {
+        question: `What flavours/aromas does PEAT contribute when drying malted barley?`,
+        answer: `Smoke
+        Medicinal
+        Brine`,
+        section: `Section 5`
+    },    {
+        question: `Which liqueur has a Scotch base?`,
+        answer: `Drambuie
+        Glayva`,
+        section: `Section 5`
+    },    {
+        question: `Where in the world do they spell it "Whiskey"?`,
+        answer: ``,
+        section: `Section 5`
+    },    {
+        question: `Where in the world do they spell it "Whiskey"?`,
+        answer: `Ireland!
+        Much of the time in the USA too, but not always`,
+        section: `Section 5`
+    },    {
+        question: `List 2 Brands of inexpensive Blended Scotch`,
+        answer: `Grant's
+        Johnnie Walker Red Label
+        Ballantines
+        Famous Grouse
+        Teachers`,
+        section: `Section 5`
+    },    {
+        question: `Name a Premium Blended Scotch`,
+        answer: `Chivas Regal
+        Johnnie Walker Black Label
+        Johnnie Walker Blue Label`,
+        section: `Section 5`
+    },    {
+        question: `List 3 Single Malt Scotches`,
+        answer: `Oban
+        Glenfiddich
+        Glenlivet
+        Macallan
+        Talisker
+        Dalmore
+        Glenmorangie`,
+        section: `Section 5`
+    },
+    {
+        question: `List 2 Brands of Irish Whiskey`,
+        answer: `Jameson
+        Bushmills
+        Writer's Tears
+        Red Breast`,
+        section: `Section 5`
+    },    
+    {
+        question: `List 2 Brands of Bourbon`,
+        answer: `Jim Beam
+        Old Forester
+        Wild Turkey
+        Knob Creek
+        Makers Mark
+        Four Roses`,
+        section: `Section 5`
+    },
+    {
+        question: `List 2 Brands of Canadian Rye`,
+        answer: `Canadian Club
+        Wisers
+        Forty Creek
+        Alberta Premium`,
+        section: `Section 5`
+    },
+    {
+        question: `Name a Premium Canadian Rye`,
+        answer: `Crown Royal
+        Lot no. 40`,
+        section: `Section 5`
+    },
+    {
+        question: `List a Brand of Tennessee Whiskey`,
+        answer: `Jack Daniels
+        George Dickel`,
+        section: `Section 5`
+    },
+    {
+        question: `When do you add mix to a "Stir and Strained" drink?`,
+        answer: `Never`,
+        section: `Section 5`
+    },
+    {
+        question: `The difference between a Manhattan and a Rob Roy?`,
+        answer: `Manhattan uses Rye,
+        Rob Roy uses Blended Scotch`,
+        section: `Section 5`
+    },
+    {
+        question: `How do you make a Manhattan or Rob Roy 'Perfect'?`,
+        answer: `Use both Vermouths.
+        0.25 oz Sweet Vermouth
+        0.25 oz Dry Vermouth`,
+        section: `Section 5`
+    },
+    {
+        question: `How do you garnish an Emerald?`,
+        answer: `Cherry.`,
+        section: `Section 5`
+    },
+    {
+        question: `How much ice is used when serving whiskies NEAT?`,
+        answer: `no ice`,
+        section: `Section 5`
+    },
+    {
+        question: `What is a 'Pressed' cocktail?`,
+        answer: `Half soda water and half mix (cola or ginger ale)`,
+        section: `Section 5`
+    },
+    {
+        question: `Definition: Is Single Malt or Blended Scotch typically regarded as higher quality? Why?`,
+        answer: `Single Malt Scotch Whiskies
+        1. They come from only ONE distillery
+        2. They use 100% malted barley`,
+        section: `Section 5`
+    },
+    {
+        question: `Why are Scotch Whiskies distilled in a Pot Still?`,
+        answer: `To capture more congeners (flavour/aroma compounds) in the final spirit`,
+        section: `Section 5`
+    },
+    {
+        question: `How long must a Whisky in Canada be aged?`,
+        answer: `3 years in oak barrels`,
+        section: `Section 5`
+    },
+    {
+        question: `What is a 'Water Back'?`,
+        answer: `A serving of water on the side so the guest can add as much water as they like`,
+        section: `Section 5`
+    },
+    {
+        question: `What spirit goes in an Irish Coffee?`,
+        answer: `Irish Whiskey`,
+        section: `Section 5`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 4`
+        section: `Section 6`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 4`
+        section: `Section 6`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 4`
+        section: `Section 6`
     },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
-    {
-        question: ``,
-        answer: ``,
-        section: `Section 4`
-    },
+]
 
+
+export const Template: Review[] = [
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 6`
+    },
 ]
