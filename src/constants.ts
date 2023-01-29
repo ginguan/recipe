@@ -1177,7 +1177,7 @@ export const TequilaDrinks: Drinks[] = [
         ]
     },
     {
-        name: 'Poloma',
+        name: 'Paloma',
         tag: `Tequila`,
         method: `Build on ice`,
         glass: 'Tall',
