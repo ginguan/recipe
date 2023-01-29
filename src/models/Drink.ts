@@ -1,6 +1,6 @@
 export type Drinks ={
     name: String,
-    granish?: String,
+    garnish?: String,
     method: String,
     glass: String,
     ingredients: Array<Ingredient>,

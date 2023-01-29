@@ -1,10 +1,9 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import DrinkTable from './components/DrinkTable';
-import React from 'react';
-import { NonAlcoholicDrinks, VodkaDrinks, LiqueurDrinkns, GinDrinkns, Collins, RumDrinks, TequilaDrinks, WhiskeyDrinks, BrandyDrinks } from './constants';
-import { Routes, Route } from 'react-router-dom';
 import RandomQuiz from './components/RandomQuiz';
-
+import { BrandyDrinks, Collins, GinDrinkns, LiqueurDrinkns, NonAlcoholicDrinks, RumDrinks, TequilaDrinks, VodkaDrinks, WhiskeyDrinks } from './constants';
+import * as React from 'react';
 
 function App() {
   const all = [...NonAlcoholicDrinks,...VodkaDrinks,...LiqueurDrinkns,...GinDrinkns,...RumDrinks,...TequilaDrinks,...WhiskeyDrinks,...BrandyDrinks]
