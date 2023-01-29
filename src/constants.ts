@@ -2380,19 +2380,201 @@ export const ReviewQuestion: Review[] = [
         section: `Section 5`
     },
     {
-        question: ``,
-        answer: ``,
+        question: `What containers are used to ferment & age wine in?`,
+        answer: `Oak Barrels,
+        Stainless Steel Vats`,
         section: `Section 6`
     },
     {
-        question: ``,
-        answer: ``,
+        question: `Give an example of a fortified wine? Serving Size?`,
+        answer: `Port
+        Sherry
+        Madiera.
+        1-2 oz`,
         section: `Section 6`
     },
     {
-        question: ``,
-        answer: ``,
+        question: `Name 4 varieties of RED wine grapes (varietals)?`,
+        answer: `Merlot
+        Malbec
+        Zinfandel
+        Cabernet Sauvignon
+        Cabernet Franc
+        Pinot Noir
+        Malbec
+        Shiraz / Syrah`,
         section: `Section 6`
+    },
+    {
+        question: `Name 4 varieties of WHITE wine grapes (varietals)?`,
+        answer: `Riesling
+        Gewurztraminer
+        Moscato
+        Chardonnay
+        Pinot Gris / Pinot Grigio
+        Sauvignon Blanc
+        Chenin Blanc`,
+        section: `Section 6`
+    },
+    {
+        question: `How full should you serve a glass of Red or White wine?`,
+        answer: `Table wines are 5-6 oz`,
+        section: `Section 6`
+    },
+    {
+        question: `Which wines should be chilled before serving?`,
+        answer: `White Wines
+        Sparkling Wines
+        Rose Wines`,
+        section: `Section 6`
+    },
+    {
+        question: `Which wines should be allowed to breathe before serving?`,
+        answer: `Red wine`,
+        section: `Section 6`
+    },
+    {
+        question: `Which wines should be stored on their side? Why?`,
+        answer: `Bottles with a cork. We do that to keep the cork moist, so it doesn't dry out`,
+        section: `Section 6`
+    },
+    {
+        question: `Name two wine regions in Canada`,
+        answer: `Okanagan,
+        Niagara`,
+        section: `Section 6`
+    },
+    {
+        question: `Name two wine regions in France`,
+        answer: `Bordeaux
+        Burgundy
+        Alsace
+        Champagne
+        Cognac`,
+        section: `Section 6`
+    },
+    {
+        question: `What are the two components of grapes essential for wine making? What gives red wine its colour?`,
+        answer: `Juice and the Skins.
+        Color comes from fermentation with the skins`,
+        section: `Section 6`
+    },
+    {
+        question: `What is the maximum ABV of wine?`,
+        answer: `about 14%ABV`,
+        section: `Section 6`
+    },
+    {
+        question: `What is "Vintage"?`,
+        answer: `The year the grapes were picked/harvested`,
+        section: `Section 6`
+    },
+    {
+        question: `What is 'decanting'?`,
+        answer: `Transferring the wine to another vessel to allow it to mix with air (Breathe)`,
+        section: `Section 6`
+    },
+    {
+        question: `What are Vitis Vinifera grapes? `,
+        answer: `The species of grape used for wine making`,
+        section: `Section 6`
+    },
+    {
+        question: `Do you require a corkscrew to open a bottle of champagne?`,
+        answer: `NO. The pressure in the bottle will push the cork out.`,
+        section: `Section 6`
+    },
+    {
+        question: `What is Brandy?`,
+        answer: `A spirit distilled from fruit wine.`,
+        section: `Section 6`
+    },
+    {
+        question: `What is the difference between Cognac and Brandy?`,
+        answer: `Cognac must come from the cognac region of France.`,
+        section: `Section 6`
+    },
+    {
+        question: `Name 2 brands of Cognac`,
+        answer: `Hennessey
+        Courvoisier
+        Camus
+        Louis XIII
+        Martell`,
+        section: `Section 6`
+    },
+    {
+        question: `What 2 ingredients are needed to start fermentation?`,
+        answer: `Sugary Liquid
+        Yeast`,
+        section: `Section 7`
+    },
+    {
+        question: `Name SIX Imported beers:`,
+        answer: `Corona, Sol, Dos Equis, Modelo
+        Heineken, Becks, Stella, Carlsberg
+        Guinness, Kilkenny, Newcastle
+        Kirin, Sapporo, Asahi
+        any brands not from Canada or USA`,
+        section: `Section 7`
+    },
+    {
+        question: `Name SIX Domestic beers:`,
+        answer: `Molson Canadian, Labatt Blue
+        Phillips, Stanley Park, Granville Island, Cariboo, Pabst
+        Kokanee, Budweiser, Coors, Twin Sails`,
+        section: `Section 7`
+    },
+    {
+        question: `Name the 4 ingredients necessary to make beer. Which one adds bitterness?`,
+        answer: `Water
+        Grains
+        Hops (adds bitterness)
+        Yeast`,
+        section: `Section 7`
+    },
+    {
+        question: `What are the two classifications of beer?
+        Give examples:`,
+        answer: `Ales (IPA or Stout)
+        Lagers (Pilsner or Boch)`,
+        section: `Section 7`
+    },
+    {
+        question: `What 4 factors should be considered
+        when handling draught beer?`,
+        answer: `1. Temperature (the keg and beer must be cold)
+        2. Pressure (too high, it's foamy... too low and it's flat)
+        3. Cleanliness (keep your glasses and taps clean)
+        4. Freshness (first in, first out)`,
+        section: `Section 7`
+    },
+    {
+        question: `Before bottling, what 2 methods are used to STOP the fermentation process`,
+        answer: `Pasteurization (heat to kill the yeast)
+        Cold Filtering (filter out the yeast without heating)`,
+        section: `Section 7`
+    },
+    {
+        question: `Why is bottled beer pasteurized?`,
+        answer: `For longer shelf life`,
+        section: `Section 7`
+    },
+    {
+        question: `What is the lifetime of a tapped keg of beer on a CO2 system?`,
+        answer: `3-4 weeks before it starts losing it's freshness`,
+        section: `Section 7`
+    },
+    {
+        question: `Why use coloured glass for beer bottles?`,
+        answer: `Protect the beer from turning skunky (direct sun light)`,
+        section: `Section 7`
+    },
+    {
+        question: `What TWO gases are typically used to push beer out of a keg?`,
+        answer: `CO2 (Carbon Dioxide)
+        Nitrogen`,
+        section: `Section 7`
     },
 ]
 
@@ -2401,6 +2583,6 @@ export const Template: Review[] = [
     {
         question: ``,
         answer: ``,
-        section: `Section 6`
+        section: `Section 7`
     },
 ]
