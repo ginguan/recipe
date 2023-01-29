@@ -2058,48 +2058,130 @@ export const ReviewQuestion: Review[] = [
         section: `Section 3`
     },
     {
-        question: ``,
-        answer: ``,
+        question: `List 2 Premium brands of Gin`,
+        answer: `The Botanist,
+        Empress,
+        Hendricks,
+        Tanqueray No. 10,
+        Bombay Sapphire Star of Bombay,
+        Plymouth`,
         section: `Section 3`
+    },
+    {
+        question: `What are the FOUR Rules of Martinis?`,
+        answer: `1. Ask "Vodka or Gin?"
+        2. Ask "Well or Premium?"
+        3. Stir, unless asked to shake
+        4. Ask "Olives or a Lemon Twist?"`,
+        section: `Section 3`
+    },
+    {
+        question: `Why should a classic martini be stirred?`,
+        answer: `To only chill the booze, not dilute it.`,
+        section: `Section 3`
+    },
+    {
+        question: `Why does James Bond need his Martini Shaken?`,
+        answer: `Ultimately, dilution.`,
+        section: `Section 3`
+    },
+    {
+        question: `Why should a drink with soda water never be shaken?`,
+        answer: `It might explode in the shaker`,
+        section: `Section 3`
+    },
+    {
+        question: `List 6 essential bar glasses`,
+        answer: `Rocks Glass
+        Collins Glass
+        Martini Glass
+        Cocktail Glass
+        Wine Glass
+        Beer Glass`,
+        section: `Section 3`
+    },
+    {
+        question: `What are 4 Methods of Mixing? Give an example of each`,
+        answer: `Build on Ice: screwdriver,
+        Shake & Strain: Lemon drop,
+        Stir & Strain: Dry Martini,
+        Shake & Pour: Margarita`,
+        section: `Section 3`
+    },
+    {
+        question: `Work in progress`,
+        answer: ``,
+        section: `Section 4`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 3`
+        section: `Section 4`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 3`
+        section: `Section 4`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 3`
+        section: `Section 4`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 3`
+        section: `Section 4`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 3`
+        section: `Section 4`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 3`
+        section: `Section 4`
     },
     {
         question: ``,
         answer: ``,
-        section: `Section 3`
+        section: `Section 4`
     },
-
-
-
-
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 4`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 4`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 4`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 4`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 4`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 4`
+    },
+    {
+        question: ``,
+        answer: ``,
+        section: `Section 4`
+    },
 
 ]
